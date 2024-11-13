@@ -1,4 +1,8 @@
-# HYDRA
+---
+description: Herramienta para realizar ataques de fuerza bruta en diversos protocolos.
+---
+
+# Hydra
 
 ## PARAMETROS
 

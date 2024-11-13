@@ -13,4 +13,4 @@
 * [Interactive blocks](herramientas/interactive-blocks.md)
 * [OpenAPI](herramientas/openapi.md)
 * [Integrations](herramientas/integrations.md)
-* [HYDRA](herramientas/hydra.md)
+* [Hydra](herramientas/hydra.md)
