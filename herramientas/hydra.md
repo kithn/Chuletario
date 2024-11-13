@@ -2,7 +2,9 @@
 
 ## PARAMETROS
 
-\-L -> Se indica el list users. -P -> Se indica el listado de contraseña.
+\-L -> Se indica el list users.&#x20;
+
+\-P -> Se indica el listado de contraseña.
 
 ## COMANDOS
 
