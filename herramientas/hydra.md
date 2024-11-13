@@ -4,13 +4,13 @@ description: Herramienta para realizar ataques de fuerza bruta en diversos proto
 
 # Hydra
 
-## Parámetros de Hydra
+## Parámetros
 
 * **-L**: Indica el archivo con la lista de usuarios.
 * **-P**: Indica el archivo con la lista de contraseñas.
 * **-l**: Especifica un usuario individual en lugar de una lista.
 
-## Comandos de Hydra para Ataques de Fuerza Bruta
+## Comandos
 
 #### 1. FTP (File Transfer Protocol)
 
