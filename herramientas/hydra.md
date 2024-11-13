@@ -4,20 +4,50 @@ description: Herramienta para realizar ataques de fuerza bruta en diversos proto
 
 # Hydra
 
-## PARAMETROS
+## Parámetros de Hydra
 
-\-L -> Se indica el list users.&#x20;
+* **-L**: Indica el archivo con la lista de usuarios.
+* **-P**: Indica el archivo con la lista de contraseñas.
+* **-l**: Especifica un usuario individual en lugar de una lista.
 
-\-P -> Se indica el listado de contraseña.
+## Comandos de Hydra para Ataques de Fuerza Bruta
 
-## COMANDOS
+#### 1. FTP (File Transfer Protocol)
 
-hydra -L \[list users] -P \[list pass] \[IP] ftp -> Ataque de fuerza bruta para el protocolo FTP.
+```bash
+hydra -L [lista_usuarios] -P [lista_contraseñas] [IP] ftp
+```
 
-hydra -L \[list users] -P \[list pass] \[IP] ssh -> Ataque de fuerza bruta para el protocolo SSH.
+Realiza un ataque de fuerza bruta contra el protocolo FTP en la dirección IP especificada.
 
-hydra -L \[list users] -P \[list pass] rdp://\[IP] \[-s\[puerto]] -> Ataque de fuerza bruta para el protocolo RDP.
+#### 2. SSH (Secure Shell)
 
-hydra -l \[user] -P \[list pass] \[IP] mysql -> Ataque de fuerza bruta para el usuario de mysql.
+```bash
+hydra -L [lista_usuarios] -P [lista_contraseñas] [IP] ssh
+```
 
-hydra -l \[user] -P \[list pass] \[IP] http-get /webdav/ -> Ataque de fuerza bruta para el usuario de webdav.
+Ejecuta un ataque de fuerza bruta contra el protocolo SSH en la IP indicada.
+
+#### 3. RDP (Remote Desktop Protocol)
+
+```bash
+hydra -L [lista_usuarios] -P [lista_contraseñas] rdp://[IP] -s [puerto]
+```
+
+Lanza un ataque de fuerza bruta para el acceso remoto a través de RDP en la IP y puerto (opcional) especificados.
+
+#### 4. MySQL
+
+```bash
+hydra -l [usuario] -P [lista_contraseñas] [IP] mysql
+```
+
+Ataque de fuerza bruta contra un usuario específico de MySQL en la dirección IP dada.
+
+#### 5. WebDAV (HTTP GET)
+
+```bash
+hydra -l [usuario] -P [lista_contraseñas] [IP] http-get /webdav/
+```
+
+Realiza un ataque de fuerza bruta contra un usuario en un recurso web protegido por WebDAV, utilizando el método HTTP GET en la ruta indicada.
